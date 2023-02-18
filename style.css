@@ -130,7 +130,7 @@ input{
 .info span {
     font-size: 2rem;
     color: #ff0511;
-
+}
 
 
 /* For responsiveness */
@@ -152,18 +152,38 @@ input{
     }
     }
 
-    @media (max-width: 480px) {
-        body {
+    @media(max-width:800px){
+        body{
             width:100vw;
+
         }
-        input{
-            width:60vw;
+        main{
+            width:80vw;
+            padding: 2rem;
+
         }
+        #welcomeScreen h2{
+            text-transform: capitalize;
+            font-size: 2rem;
+            
+        } 
         button{
-            width:20vw;
+            min-width: 20rem;
         }
-        main {
-            width:100vw;
-            padding:2rem;
+        .button-wrapper button {
+            font-size: 1.5rem;
         }
-    }
+        input {
+            width:20rem;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .info span{
+            margin-top: 1rem;
+            font-size:1.6rem;
+        }
+    } 
